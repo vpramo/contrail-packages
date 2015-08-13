@@ -8,7 +8,7 @@ override_dh_installinit:
 	dh_installinit --name=contrail-webui-jobserver
 	dh_installinit --name=contrail-webui-webserver
 	
-#BRANCH=--branch R1.06
+BRANCH=--branch R2.1
 #TAGS=tags/v1.06
 SRC_PACKAGE = contrail-web-controller
 SRC_VERSION := $(shell dpkg-parsechangelog | sed -ne 's/^Version: \(\([0-9]\+\):\)\?\(.*\)/\3/p')

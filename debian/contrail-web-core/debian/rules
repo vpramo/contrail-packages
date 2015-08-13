@@ -3,7 +3,7 @@
 %:
 	dh $@
 
-#BRANCH=--branch R1.06
+BRANCH=--branch R2.1
 #TAGS=tags/v1.06
 SRC_PACKAGE = contrail-web-core
 SRC_VERSION := $(shell dpkg-parsechangelog | sed -ne 's/^Version: \(\([0-9]\+\):\)\?\(.*\)/\3/p')
